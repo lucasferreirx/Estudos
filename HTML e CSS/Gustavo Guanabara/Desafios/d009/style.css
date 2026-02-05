@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+h1,p {
+    text-align: center;
+    color: white
+}
+
+img {
+    display: flex;
+    margin: auto;
+    text-align: center;}
+
+iframe {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    height: 450px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/exercícios/ex009/imagens/GatoFoda.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagens dinâmicas</h2>
+    <p>Tente abrir esse site em diferentes dispositivos ou aumente/diminua o tamanho do navegador para experimentar as imagens dinâmicas</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem G">
+    </picture>
+    <p>Vamos testar diferentes imagens com diferentes funções</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem P">
+    </picture>
+    <hr>
+    <h2>Reproduzindo aúdios</h2>
+    <p>Agora vamos adicionar um aúdio ao nosso site</p>
+    <p>1º Maneira:</p>
+    <audio src="midia/audio/On-the-Way.mp3" autoplay controls loop></audio>
+    <p>2º Maneira:</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/audio/On-the-Way.mp3" type="audio/mpeg">
+        <source src="midia/audio/On-the-Way.ogg" type="audio/ogg">
+        <source src="midia/audio/On-the-Way.wav" type="audio/wav">
+        <p>Não foi possível reproduzir o aúdio. Por favor baixe-o clicando <a href="midia/On-the-Way.mp3">aqui</a> e escute ele com atenção.</p>
+    </audio>
+    <hr>
+    <h2>Hospedando vídeos própios</h2>
+    <p>Esse é um vídeo hospedado no própio servidor</p>
+    <video controls width="500" poster="imagens/capa-video-spitz.png" loop>
+        <source src="midia/video/Video-Cachorro.webm" type="video/webm">
+        <source src="midia/video/Video-Cachorro.ogv" type="video/ogv">
+        <source src="midia/video/Video-Cachorro.mp4" type="video/mp4">
+        <source src="midia/video/Video-Cachorro.m4v" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade para reprodução de vídeos</p>
+    </video>
+    <hr>
+    <h2>Inserindo vídeos do youtube</h2>
+    <p>Dentro da plataforma compartilhe o vídeo desejado e gere um link clicando em incorporar, esse link é o que você irá usar para colar aqui no código</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o5l2vP6IFvg?si=Ri6c-74B8jf37TKx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>Também nos casos em que você vai criar tipo um site de algum curso, como por exemplo, onde o vídeo não pode sair alí daquele espaço do site, você deve usar ferramentas que possuem essa função como o Vimeo</p>
+    <iframe src="https://player.vimeo.com/video/1083549816?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="27 (Flóra Anna BUDA, 2023)"></iframe>
+</body>
+</html>

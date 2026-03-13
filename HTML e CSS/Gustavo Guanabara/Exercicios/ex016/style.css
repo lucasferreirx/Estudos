@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav {
+        background-color: #014a8e;
+        display: flex;
+        height: 100px;
+    }
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+    }
